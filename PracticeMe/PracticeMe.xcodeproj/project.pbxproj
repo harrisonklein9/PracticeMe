@@ -15,6 +15,7 @@
 		2E1D5E4E1F564FA6005D5F07 /* PracticeMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D5E4D1F564FA6005D5F07 /* PracticeMeTests.swift */; };
 		2E1D5E591F564FA6005D5F07 /* PracticeMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D5E581F564FA6005D5F07 /* PracticeMeUITests.swift */; };
 		2E1D5E671F565065005D5F07 /* Cal_Goal_Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D5E661F565065005D5F07 /* Cal_Goal_Data.swift */; };
+		2E1D5E691F565957005D5F07 /* goalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D5E681F565957005D5F07 /* goalEntryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2E1D5E581F564FA6005D5F07 /* PracticeMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeMeUITests.swift; sourceTree = "<group>"; };
 		2E1D5E5A1F564FA6005D5F07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E1D5E661F565065005D5F07 /* Cal_Goal_Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cal_Goal_Data.swift; sourceTree = "<group>"; };
+		2E1D5E681F565957005D5F07 /* goalEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = goalEntryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				2E1D5E381F564FA6005D5F07 /* AppDelegate.swift */,
 				2E1D5E3A1F564FA6005D5F07 /* ViewController.swift */,
 				2E1D5E661F565065005D5F07 /* Cal_Goal_Data.swift */,
+				2E1D5E681F565957005D5F07 /* goalEntryViewController.swift */,
 				2E1D5E3C1F564FA6005D5F07 /* Main.storyboard */,
 				2E1D5E3F1F564FA6005D5F07 /* Assets.xcassets */,
 				2E1D5E411F564FA6005D5F07 /* LaunchScreen.storyboard */,
@@ -265,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E1D5E691F565957005D5F07 /* goalEntryViewController.swift in Sources */,
 				2E1D5E3B1F564FA6005D5F07 /* ViewController.swift in Sources */,
 				2E1D5E671F565065005D5F07 /* Cal_Goal_Data.swift in Sources */,
 				2E1D5E391F564FA6005D5F07 /* AppDelegate.swift in Sources */,

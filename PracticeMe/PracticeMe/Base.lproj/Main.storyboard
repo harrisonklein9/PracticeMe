@@ -30,10 +30,11 @@
                                             <action selector="createNewGoal:" destination="BYZ-38-t0r" id="KM7-Fe-TBb"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xKG-sH-nAx"/>
                                 </items>
                             </toolbar>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.094721028829930429" green="0.35437406034951713" blue="0.77433896064758301" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ZBy-8C-6yA" secondAttribute="trailing" id="4QF-ns-HAU"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZBy-8C-6yA" secondAttribute="bottom" id="Xtj-lv-Tne"/>
@@ -43,6 +44,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-322" y="-75"/>
+        </scene>
+        <!--Goal Entry View Controller-->
+        <scene sceneID="VdH-Eu-fvY">
+            <objects>
+                <viewController id="l1Q-TE-oID" customClass="goalEntryViewController" customModule="PracticeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OnP-rO-ny7"/>
+                        <viewControllerLayoutGuide type="bottom" id="PdX-ro-5hy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="phX-Jh-08z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WBp-W4-F6z">
+                                <rect key="frame" x="0.0" y="28" width="375" height="619"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="l1Q-TE-oID" id="6am-gP-jVq"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PdX-ro-5hy" firstAttribute="top" secondItem="WBp-W4-F6z" secondAttribute="bottom" constant="20" id="3Nd-Cd-3yb"/>
+                            <constraint firstItem="WBp-W4-F6z" firstAttribute="top" secondItem="OnP-rO-ny7" secondAttribute="bottom" constant="8" id="Yr1-09-pgh"/>
+                            <constraint firstItem="WBp-W4-F6z" firstAttribute="leading" secondItem="phX-Jh-08z" secondAttribute="leading" id="aVc-cg-SQX"/>
+                            <constraint firstAttribute="trailing" secondItem="WBp-W4-F6z" secondAttribute="trailing" id="eLC-w7-OhP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goalView" destination="WBp-W4-F6z" id="anM-62-SiU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t13-tx-Jca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="389.60000000000002" y="-72.413793103448285"/>
         </scene>
     </scenes>
 </document>
