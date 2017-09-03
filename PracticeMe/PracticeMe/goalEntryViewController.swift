@@ -12,18 +12,32 @@ import UIKit
 class goalEntryViewController: UIViewController {
     @IBOutlet weak var goalView: UITextView!
     
+    var saveText: (_ text: String) -> Void = { (text:String) in }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        goalView.inputAccessoryView = createKeyboardToolbar()
         goalView.becomeFirstResponder()
+    }
+    
+    func createKeyboardToolbar() -> UIView {
+    let keyboardToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 44))
+    
+    let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+    let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonPressed))
+    keyboardToolbar.setItems([flexSpace, doneButton], animated: false)
+    
+    return keyboardToolbar
+    }
+    
+    func doneButtonPressed() {
+        goalView.resignFirstResponder()
     }
 }
 
 extension goalEntryViewController: UITextViewDelegate {
     func textViewDidEndEditing(_ textView: UITextView) {
-        <#code#>
+        saveText(goalView.text)
+        dismiss(animated: true, completion: nil)
     }
-}
-
-createKeyboardToolbar() -> UIVIew {
-    let 
 }

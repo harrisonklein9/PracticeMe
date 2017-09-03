@@ -25,8 +25,7 @@ class ViewController: UIViewController {
         let alert = UIAlertController(title: "Select A Type", message: nil, preferredStyle: .actionSheet)
         let goalAction = UIAlertAction(title: "Goal", style: .default) {
             (alert: UIAlertAction!) -> Void in
-            self.data.append(Cal_Goal_Data(cal_Goal_Type: .goal))
-        }
+            self.creatNewGoalText()       }
         let auditionAction = UIAlertAction(title: "Audition", style: .default) {
             (alert: UIAlertAction!) -> Void in
             self.data.append(Cal_Goal_Data(cal_Goal_Type: .audition))
@@ -38,7 +37,22 @@ class ViewController: UIViewController {
         alert.addAction(cancelAction)
         present(alert, animated: true, completion: nil)
     }
+    
+    func creatNewGoalText() {
+        guard let goalEntryVC = storyboard?.instantiateViewController(withIdentifier: "goalEntry") as? goalEntryViewController else {
+            print("goal entry view controller could not be instantiated from storyboard")
+            return
+        }
+        goalEntryVC.modalTransitionStyle = .coverVertical
+        goalEntryVC.saveText = { (text: String) in
+            let newGoalText = GoalData(goal: text)
+            self.data.append(newGoalText)
+        }
+        present(goalEntryVC, animated: true, completion: nil)
+    }
+}
 
+extension ViewController: UITableViewDataSource {
 
 }
 
