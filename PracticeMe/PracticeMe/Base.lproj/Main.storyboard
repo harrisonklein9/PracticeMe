@@ -33,23 +33,11 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="xKG-sH-nAx"/>
                                 </items>
                             </toolbar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NZx-We-DVf">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="BQ9-O1-rbf"/>
-                                </connections>
-                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.094721028829930429" green="0.35437406034951713" blue="0.77433896064758301" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ZBy-8C-6yA" secondAttribute="trailing" id="4QF-ns-HAU"/>
-                            <constraint firstAttribute="trailing" secondItem="NZx-We-DVf" secondAttribute="trailing" id="PcF-F8-FFf"/>
-                            <constraint firstItem="NZx-We-DVf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SGu-va-dlr"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZBy-8C-6yA" secondAttribute="bottom" id="Xtj-lv-Tne"/>
-                            <constraint firstItem="NZx-We-DVf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hxa-xc-89n"/>
-                            <constraint firstItem="ZBy-8C-6yA" firstAttribute="top" secondItem="NZx-We-DVf" secondAttribute="bottom" id="mmj-Z5-a3r"/>
                             <constraint firstItem="ZBy-8C-6yA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vw7-mR-K2d"/>
                         </constraints>
                     </view>
@@ -57,6 +45,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-311.19999999999999" y="-72.413793103448285"/>
+        </scene>
+        <!--Audition Entry View Contoller-->
+        <scene sceneID="OxT-mO-1p2">
+            <objects>
+                <viewController id="G2Q-V5-k5V" customClass="auditionEntryViewContoller" customModule="PracticeMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TIh-Lc-mcy"/>
+                        <viewControllerLayoutGuide type="bottom" id="NJA-0G-AXf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f8M-Ki-kD0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JX0-7m-50v">
+                                <rect key="frame" x="106" y="229" width="162" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="helloWorld" destination="JX0-7m-50v" id="GaJ-Bg-1WP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rI6-Zk-dnu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-316" y="586.95652173913049"/>
         </scene>
         <!--Goal Entry View Controller-->
         <scene sceneID="VdH-Eu-fvY">

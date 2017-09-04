@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             self.creatNewGoalText()       }
         let auditionAction = UIAlertAction(title: "Audition", style: .default) {
             (alert: UIAlertAction!) -> Void in
-            self.data.append(Cal_Goal_Data(cal_Goal_Type: .audition))
+            self.createNewAuditionText()
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
@@ -50,9 +50,18 @@ class ViewController: UIViewController {
         }
         present(goalEntryVC, animated: true, completion: nil)
     }
+    
+    func createNewAuditionText() {
+        guard let auditionEntryVC = storyboard?.instantiateInitialViewController() as? auditionEntryViewContoller else {
+            print("audition entry view controller could not be instantiated from storyboard")
+            return
+        }
+        auditionEntryVC.modalTransitionStyle = .coverVertical
+        present(auditionEntryVC, animated: true, completion: nil)
+    }
 }
-
+/*
 extension ViewController: UITableViewDataSource {
 
-}
+}*/
 

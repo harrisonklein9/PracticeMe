@@ -16,6 +16,7 @@
 		2E1D5E591F564FA6005D5F07 /* PracticeMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D5E581F564FA6005D5F07 /* PracticeMeUITests.swift */; };
 		2E1D5E671F565065005D5F07 /* Cal_Goal_Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D5E661F565065005D5F07 /* Cal_Goal_Data.swift */; };
 		2E1D5E691F565957005D5F07 /* goalEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E1D5E681F565957005D5F07 /* goalEntryViewController.swift */; };
+		2EEC505C1F5CEDEC00454B16 /* auditionEntryViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEC505B1F5CEDEC00454B16 /* auditionEntryViewContoller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		2E1D5E5A1F564FA6005D5F07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E1D5E661F565065005D5F07 /* Cal_Goal_Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cal_Goal_Data.swift; sourceTree = "<group>"; };
 		2E1D5E681F565957005D5F07 /* goalEntryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = goalEntryViewController.swift; sourceTree = "<group>"; };
+		2EEC505B1F5CEDEC00454B16 /* auditionEntryViewContoller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = auditionEntryViewContoller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				2E1D5E3A1F564FA6005D5F07 /* ViewController.swift */,
 				2E1D5E661F565065005D5F07 /* Cal_Goal_Data.swift */,
 				2E1D5E681F565957005D5F07 /* goalEntryViewController.swift */,
+				2EEC505B1F5CEDEC00454B16 /* auditionEntryViewContoller.swift */,
 				2E1D5E3C1F564FA6005D5F07 /* Main.storyboard */,
 				2E1D5E3F1F564FA6005D5F07 /* Assets.xcassets */,
 				2E1D5E411F564FA6005D5F07 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EEC505C1F5CEDEC00454B16 /* auditionEntryViewContoller.swift in Sources */,
 				2E1D5E691F565957005D5F07 /* goalEntryViewController.swift in Sources */,
 				2E1D5E3B1F564FA6005D5F07 /* ViewController.swift in Sources */,
 				2E1D5E671F565065005D5F07 /* Cal_Goal_Data.swift in Sources */,
@@ -524,6 +528,7 @@
 				2E1D5E5F1F564FA6005D5F07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E1D5E601F564FA6005D5F07 /* Build configuration list for PBXNativeTarget "PracticeMeTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +537,7 @@
 				2E1D5E621F564FA6005D5F07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E1D5E631F564FA6005D5F07 /* Build configuration list for PBXNativeTarget "PracticeMeUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +546,7 @@
 				2E1D5E651F564FA6005D5F07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
